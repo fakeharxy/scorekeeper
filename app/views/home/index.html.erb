@@ -1,2 +1,22 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h3> The Game of Thrones CE Club League</h3>
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Wins</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+  <% @scores.each do |name, score, wins| %>
+    <tbody>
+      <tr>
+        <td><%= name %></td>
+        <td><%= wins %></td>
+        <td><%= score %></td>
+      </tr>
+    </tbody>
+  <% end %>
+</table>
+
+
+  <%= link_to "Add New Result", games_path, :class => "btn btn-default btn-lg" %>

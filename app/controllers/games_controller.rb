@@ -4,8 +4,10 @@ class GamesController < ApplicationController
   end
 
   def create
-    @game = Game.new(game_params)
-    @game.save
+    if game_params[:secret] == 'Got!'
+      @game = Game.new(game_params.except(:secret))
+      @game.save
+    end
     redirect_to '/'
   end
 
@@ -13,7 +15,7 @@ class GamesController < ApplicationController
 
   def game_params
     params.require(:game)
-      .permit(:oli, :paul, :john, :tom, :al)
+      .permit(:oli, :paul, :john, :tom, :al, :secret)
       .merge(:date => Date.today)
   end
 end

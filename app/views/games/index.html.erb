@@ -2,31 +2,36 @@
 
 <%= form_for :game, url: games_path do |f| %>
   <p>
-  <%= f.label :Al %><br>
+  <%= f.label :Al %>
   <%= f.select :al, [["DNP", 3], 1, 2, 3, 4, ["Win!", 6]]%>
   </p>
 
   <p>
-  <%= f.label :Tom %><br>
+  <%= f.label :Tom %>
   <%= f.select :tom, [["DNP", 3], 1, 2, 3, 4, ["Win!", 6]]%>
   </p>
 
   <p>
-  <%= f.label :John %><br>
+  <%= f.label :John %>
   <%= f.select :john, [["DNP", 3], 1, 2, 3, 4, ["Win!", 6]]%>
   </p>
 
   <p>
-  <%= f.label :Oli %><br>
+  <%= f.label :Oli %>
   <%= f.select :oli, [["DNP", 3], 1, 2, 3, 4, ["Win!", 6]]%>
   </p>
 
   <p>
-  <%= f.label :Paul %><br>
+  <%= f.label :Paul %>
   <%= f.select :paul, [["DNP", 3], 1, 2, 3, 4, ["Win!", 6]]%>
   </p>
 
   <p>
-  <%= f.submit %>
+  <%= f.label :Secret%>
+  <%= f.text_field :secret %>
+  </p>
+
+  <p>
+  <%= f.submit 'Save Game', :class => "btn btn-primary"%>
   </p>
 <% end %>
