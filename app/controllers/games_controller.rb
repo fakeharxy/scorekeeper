@@ -4,7 +4,7 @@ class GamesController < ApplicationController
   end
 
   def create
-    if game_params[:secret] == 'Got!'
+    if game_params[:secret] == ENV["SECRET"]
       @game = Game.new(game_params.except(:secret))
       @game.save
     end

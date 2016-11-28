@@ -8,7 +8,7 @@ body {
         font-size: x-large;
 }
 
-select {
+select, #game_secret {
   color: black;
 }
 
