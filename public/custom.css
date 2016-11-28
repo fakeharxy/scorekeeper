@@ -11,3 +11,8 @@ body {
 select {
   color: black;
 }
+
+.panel-body {
+  color: black;
+  font-size: small;
+}
