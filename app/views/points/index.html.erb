@@ -1,0 +1,26 @@
+<h1> Add Points </h1>
+
+<%= form_for :point do |f| %>
+  <p>
+  <%= f.label :winner1 %><br>
+  <%= f.text_field :winner1 %>
+  </p>
+
+  <p>
+  <%= f.label :winner2 %><br>
+  <%= f.text_field :winner2 %>
+  </p>
+
+  <p>
+  <%= f.label :winner3 %><br>
+  <%= f.text_field :winner3 %>
+  </p>
+
+  <p>
+  <%= f.label :winner4 %><br>
+  <%= f.text_field :winner4 %>
+  </p>
+  <p>
+  <%= f.submit %>
+  </p>
+<% end %>

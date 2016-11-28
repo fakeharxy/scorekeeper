@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  paul: 1
+  oli: 1
+  al: 1
+  tom: 1
+  john: 1
+  date: 2016-11-27
+
+two:
+  paul: 1
+  oli: 1
+  al: 1
+  tom: 1
+  john: 1
+  date: 2016-11-27
